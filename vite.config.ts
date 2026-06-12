@@ -4,6 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 import { VitePWA } from 'vite-plugin-pwa'
 
 export default defineConfig({
+  base: '/weekly-meal-planner/',
   plugins: [
     react(),
     tailwindcss(),
@@ -17,8 +18,8 @@ export default defineConfig({
         theme_color: '#059669',
         background_color: '#f1f5f9',
         display: 'standalone',
-        start_url: './',
-        scope: './',
+        start_url: '/weekly-meal-planner/',
+        scope: '/weekly-meal-planner/',
         icons: [
           {
             src: 'pwa-192x192.png',
